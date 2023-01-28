@@ -1,2 +1,85 @@
 @import url(_reset.css);
+body {
+  background-color: bisque;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.main {
+  width: 120rem;
+  height: 60rem;
+  background-color: #add8e6;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  position: relative;
+}
+.main > h1 {
+  font-size: 2.3rem;
+}
+.main::after {
+  content: '';
+  width: 90%;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  top: 6rem;
+}
+#form {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  padding-top: 2.5rem;
+}
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  height: 3rem;
+  background-color: #f1f1f1;
+  position: relative;
+}
+textarea {
+  height: 18.48rem !important;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  background-color: #56b35f;
+  color: #f1f1f1;
+  position: relative;
+  top: 1.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 56rem;
+  left: 34rem;
+  width: 53rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 50%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+}
+.validation {
+  color: red;
+  opacity: 0;
+}
+.validation.active {
+  opacity: 1;
+}

@@ -8,7 +8,137 @@
     <title>Document</title>
   </head>
   <body>
-    
+    <main class="main">
+      <h1>Student Registeration Form</h1>
+      <form data-isValid="0" id="form" action="#">
+        <section class="left">
+          <label class="text" for="firstName"
+            >Firstname:
+            <input
+              class="input"
+              data-required="1"
+              id="firstName"
+              type="input"
+              placeholder="Firstname"
+            />
+            <p class="validation">this field is required!</p>
+          </label>
+
+          <label class="text" for="middlename"
+            >Middlename:
+            <input
+              class="input"
+              data-required="1"
+              id="middlename"
+              type="text"
+              placeholder="Middlename"
+            />
+            <p class="validation">this field is required!</p></label
+          >
+          <label class="text" for="lastname"
+            >Lastname:
+            <input
+              class="input"
+              data-required="1"
+              id="lastname"
+              type="text"
+              placeholder="Lastname"
+            />
+            <p class="validation">this field is required!</p>
+          </label>
+
+          <label for="select"
+            >Course:
+            <select name="course" id="select">
+              <option value="course">Course</option>
+            </select>
+          </label>
+          <p class="validation">this field is required!</p>
+          <label for="gender">Gender:</label>
+          <section class="radio-box">
+            <label for="male">Male</label>
+            <input type="radio" value="male" checked />
+            <label for="female">Female</label>
+            <input type="radio" value="female" />
+            <label for="other">Other</label>
+            <input type="radio" value="Other" />
+          </section>
+          <p class="validation">this field is required!</p>
+          <label class="text" for="tel"
+            >Phoen:
+            <input
+              class="input"
+              data-required="1"
+              id="tel"
+              type="tel"
+              value="+91"
+            />
+            <p class="validation">this field is required!</p></label
+          >
+          <label class="text" for="tel1">
+            <input
+              class="input"
+              id="tel1"
+              data-required="1"
+              type="tel"
+              placeholder="phone no."
+            />
+            <p class="validation">this field is required!</p></label
+          >
+        </section>
+        <section class="right">
+          <label class="text" for="address"
+            >Current Address:
+            <textarea
+              class="input"
+              name="address"
+              id="address"
+              cols="30"
+              rows="10"
+              placeholder="current Address"
+              data-required="1"
+            ></textarea>
+            <p class="validation">this field is required!</p>
+          </label>
+
+          <label class="text" for="email"
+            >Email:
+            <input
+              class="input"
+              data-required="1"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <p class="validation">this field is required!</p></label
+          >
+          <label class="text" for="password"
+            >Password:
+            <input
+              class="input"
+              data-required="1"
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="new-password"
+              placeholder="password"
+            />
+            <p class="validation">this field is required!</p></label
+          >
+          <label class="text" for="retype"
+            >Re-type Password
+            <input
+              id="retypePassword"
+              class="input"
+              data-required="1"
+              type="password"
+              placeholder="Retype Password"
+            />
+            <p id="passMatch" class="validation">this field is required!</p></label
+          >
+        </section>
+        <input class="button" type="submit" value="Register" />
+      </form>
+    </main>
     <script src="HW-7.js"></script>
   </body>
 </html>
