@@ -10,7 +10,7 @@
   <body>
     <main class="main">
       <h1>Student Registeration Form</h1>
-      <form data-isValid="0" id="form" action="#">
+      <form data-isValid="0" id="form" action="#" autocomplete="new">
         <section class="left">
           <label class="text" for="firstName"
             >Firstname:
@@ -57,15 +57,15 @@
           <label for="gender">Gender:</label>
           <section class="radio-box">
             <label for="male">Male</label>
-            <input type="radio" value="male" checked />
+            <input type="radio" value="male" name="gender" checked />
             <label for="female">Female</label>
-            <input type="radio" value="female" />
+            <input type="radio" value="female" name="gender" />
             <label for="other">Other</label>
-            <input type="radio" value="Other" />
+            <input type="radio" value="Other" name="gender" />
           </section>
           <p class="validation">this field is required!</p>
           <label class="text" for="tel"
-            >Phoen:
+            >Phone:
             <input
               class="input"
               data-required="1"
@@ -104,12 +104,15 @@
           <label class="text" for="email"
             >Email:
             <input
+              id="email"
               class="input"
               data-required="1"
-              type="email"
+              type="text"
               placeholder="Enter Email"
             />
-            <p class="validation">this field is required!</p></label
+            <p id="emailMatch" class="validation">
+              this field is required!
+            </p></label
           >
           <label class="text" for="password"
             >Password:
@@ -133,7 +136,9 @@
               type="password"
               placeholder="Retype Password"
             />
-            <p id="passMatch" class="validation">this field is required!</p></label
+            <p id="passMatch" class="validation">
+              this field is required!
+            </p></label
           >
         </section>
         <input class="button" type="submit" value="Register" />

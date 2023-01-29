@@ -60,7 +60,7 @@ textarea {
   border-radius: 0.2rem;
   cursor: pointer;
   position: absolute;
-  top: 56rem;
+  top: 55rem;
   left: 34rem;
   width: 53rem;
 }
@@ -73,7 +73,7 @@ textarea {
 .right {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.15rem;
   width: 50%;
 }
 .validation {
@@ -82,4 +82,16 @@ textarea {
 }
 .validation.active {
   opacity: 1;
+}
+#passMatch.opacity {
+  opacity: 1;
+}
+.radio-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#select {
+  height: 3rem;
+  border-radius: 0.5rem;
 }
