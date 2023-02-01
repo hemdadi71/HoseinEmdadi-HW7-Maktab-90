@@ -8,7 +8,180 @@
     <title>Document</title>
   </head>
   <body>
-    
-    <script src="HW-7.js"></script>
+    <main class="main">
+      <header class="header">
+        <section class="title">
+          <p>Introduction Of Products</p>
+        </section>
+        <video id="video" controls width="100%">
+          <source id="source" />
+        </video>
+      </header>
+      <article class="article">
+        <section class="filter">
+          <ul class="filterUl">
+            <li class="filterItem">
+              <label for="model">Lap Top Model:</label>
+              <select name="select" class="select" id="model">
+                <option value="Nothing Selected" selected disabled>
+                  Nothing Selected
+                </option>
+                <option value="option-1">option-1</option>
+                <option value="option-2">option-2</option>
+                <option value="option-3">option-3</option>
+              </select>
+              <div id="filterCover">
+                <img src="images/filter-filled-tool-symbol.png" alt="icon" />
+                <span></span>
+              </div>
+            </li>
+            <li class="filterItem">
+              <label for="processor">Processor:</label>
+              <select name="select" class="select" id="processor">
+                <option value="Nothing Selected" selected>
+                  Nothing Selected
+                </option>
+                <option value="option-1">option-1</option>
+                <option value="option-2">option-2</option>
+                <option value="option-3">option-3</option>
+              </select>
+              <div id="filterCover">
+                <img src="images/filter-filled-tool-symbol.png" alt="icon" />
+                <span></span>
+              </div>
+            </li>
+            <li class="filterItem">
+              <label for="ram">RAM:</label>
+              <select name="select" class="select" id="ram">
+                <option value="Nothing Selected" selected disabled>
+                  Nothing Selected
+                </option>
+                <option value="option-1">option-1</option>
+                <option value="option-2">option-2</option>
+                <option value="option-3">option-3</option>
+              </select>
+              <div id="filterCover">
+                <img src="images/filter-filled-tool-symbol.png" alt="icon" />
+                <span></span>
+              </div>
+            </li>
+            <li class="filterItem">
+              <label for="hard-disc">Hard disc:</label>
+              <select name="select" class="select" id="hard-disc">
+                <option value="Nothing Selected" selected disabled>
+                  Nothing Selected
+                </option>
+                <option value="option-1">option-1</option>
+                <option value="option-2">option-2</option>
+                <option value="option-3">option-3</option>
+              </select>
+              <div id="filterCover">
+                <img src="images/filter-filled-tool-symbol.png" alt="icon" />
+                <span></span>
+              </div>
+            </li>
+            <li class="filterItem">
+              <label for="display">Display:</label>
+              <select name="select" class="select" id="display">
+                <option value="Nothing Selected" selected disabled>
+                  Nothing Selected
+                </option>
+                <option value="option-1">option-1</option>
+                <option value="option-2">option-2</option>
+                <option value="option-3">option-3</option>
+              </select>
+              <div id="filterCover">
+                <img src="images/filter-filled-tool-symbol.png" alt="icon" />
+                <span></span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="products">
+          <table>
+            <thead>
+              <tr class="productHeader">
+                <td class="items">Laptop model</td>
+                <td class="items">Picture</td>
+                <td class="items">Introduction Video</td>
+                <td class="items">Processor</td>
+                <td class="items">Ram</td>
+                <td class="items">Hard disk</td>
+                <td class="items">Display</td>
+                <td class="items">Graphics</td>
+                <td class="items">OS</td>
+                <td class="items">Weight</td>
+                <td class="items">Battery</td>
+                <td class="items">Price</td>
+                <td class="items">Purchase</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="products-tr" data-name="asus">
+                <td class="productsItem">Asus</td>
+                <td class="productsItem">
+                  <img class="img asus" src="images/asus.jpg" alt="img" />
+                </td>
+                <td class="productsItem">
+                  <img class="play" src="images/play-button.png" />
+                </td>
+                <td class="productsItem">Intl</td>
+                <td class="productsItem">2gb DDR3</td>
+                <td class="productsItem">16GB SSD</td>
+                <td class="productsItem">11.6" HD IPS Screen (1366x768)</td>
+                <td class="productsItem">Intel HD Graphics</td>
+                <td class="productsItem">Google Chrome Operating System</td>
+                <td class="productsItem">2.4 Pounds</td>
+                <td class="productsItem">9h</td>
+                <td class="productsItem">228$</td>
+                <td class="btn"><button class="button">Buy now</button></td>
+              </tr>
+
+              <tr class="products-tr" data-name="apple">
+                <td class="productsItem">MacBook</td>
+                <td class="productsItem">
+                  <img class="img" src="images/apple.jpg" alt="img" />
+                </td>
+                <td class="productsItem">
+                  <img class="play" src="images/play-button.png" />
+                </td>
+                <td class="productsItem">A1</td>
+                <td class="productsItem">2gb DDR3</td>
+                <td class="productsItem">16GB SSD</td>
+                <td class="productsItem">11.6" HD IPS Screen (1366x768)</td>
+                <td class="productsItem">Intel HD Graphics</td>
+                <td class="productsItem">Google Chrome Operating System</td>
+                <td class="productsItem">2.4 Pounds</td>
+                <td class="productsItem">9h</td>
+                <td class="productsItem">228$</td>
+                <td class="btn"><button class="button">Buy now</button></td>
+              </tr>
+
+              <tr class="products-tr" data-name="acer">
+                <td class="productsItem">Acer</td>
+                <td class="productsItem">
+                  <img class="img" src="images/acer.jpg" alt="img" />
+                </td>
+                <td class="productsItem">
+                  <img class="play" src="images/play-button.png" />
+                </td>
+                <td class="productsItem">Intel</td>
+                <td class="productsItem">2gb DDR3</td>
+                <td class="productsItem">16GB SSD</td>
+                <td class="productsItem">11.6" HD IPS Screen (1366x768)</td>
+                <td class="productsItem">Intel HD Graphics</td>
+                <td class="productsItem">Google Chrome Operating System</td>
+                <td class="productsItem">2.4 Pounds</td>
+                <td class="productsItem">9h</td>
+                <td class="productsItem">228$</td>
+                <td class="btn"><button class="button">Buy now</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+    <script type="module" src="sorces.js"></script>
+    <script type="module" src="HW-7.js"></script>
   </body>
 </html>
