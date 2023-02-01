@@ -19,8 +19,7 @@ body {
 }
 
 .main {
-  width: 68%;
-  max-width: 68%;
+  width: 78%;
   height: auto;
   background-color: #fff;
   display: flex;
@@ -34,6 +33,9 @@ body {
   justify-content: center;
   background-color: #1a1a1d;
   border-radius: 0.8rem 0.8rem 0 0;
+}
+video{
+  border: none;
 }
 .title p {
   font-size: 4rem;
@@ -55,6 +57,7 @@ body {
   border-bottom: 1px solid #ccc;
   align-items: center;
   justify-content: center;
+  padding: 0 1rem;
 }
 .filterUl {
   display: flex;
@@ -109,8 +112,8 @@ thead {
 }
 
 .items {
-  font-size: 1.5rem;
-  width: 7rem;
+  font-size: 1.2rem;
+  /* width: 7rem; */
   text-align: center;
 }
 .products-tr {
@@ -122,16 +125,17 @@ thead {
 }
 .productsItem {
   text-align: center;
-  font-size: 1.5rem;
-  width: 86px;
+  font-size: 1.2rem;
+  text-align: center;
+  /* width: 86px; */
 }
 
 .img {
-  width: 7rem;
-  height: 5rem;
+  width: 5rem;
+  height: 3.5rem;
 }
 .asus {
-  height: 8rem;
+  height: 6rem;
 }
 #filterCover {
   width: 100%;
@@ -148,12 +152,12 @@ thead {
 #filterCover span {
   font-size: 1.4rem;
   position: absolute;
-  right: 7rem;
+  right: 4.5rem;
   color: var(--primaryColor);
 }
 #filterCover img {
   position: absolute;
-  left: 6rem;
+  left: 4.5rem;
   opacity: 0.8;
   width: 2rem;
   height: 2rem;
@@ -173,7 +177,7 @@ td {
   padding: 1rem 0;
 }
 tbody td{
-  padding: 1rem;
+  padding: 1rem ;
 }
 .button {
   width: 100%;
@@ -186,9 +190,12 @@ tbody td{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
 }
 .play {
   cursor: pointer;
+  width: 3rem;
+  height: 3rem;
 }
