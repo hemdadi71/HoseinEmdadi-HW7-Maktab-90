@@ -60,14 +60,14 @@ textarea {
   border-radius: 0.2rem;
   cursor: pointer;
   position: absolute;
-  top: 55rem;
+  top: 52rem;
   left: 34rem;
   width: 53rem;
 }
 .left {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1.1rem;
   width: 50%;
 }
 .right {
@@ -84,6 +84,9 @@ textarea {
   opacity: 1;
 }
 #passMatch.opacity {
+  opacity: 1;
+}
+#passPatternValid.opacity {
   opacity: 1;
 }
 .radio-box {

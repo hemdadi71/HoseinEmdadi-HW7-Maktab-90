@@ -21,7 +21,7 @@
               type="input"
               placeholder="Firstname"
             />
-            <p class="validation">this field is required!</p>
+            <p class="validation"></p>
           </label>
 
           <label class="text" for="middlename"
@@ -31,10 +31,9 @@
               data-required="1"
               id="middlename"
               type="text"
-              placeholder="Middlename"
-            />
-            <p class="validation">this field is required!</p></label
-          >
+              placeholder="Middlename" />
+            <p class="validation"></p
+          ></label>
           <label class="text" for="lastname"
             >Lastname:
             <input
@@ -44,7 +43,7 @@
               type="text"
               placeholder="Lastname"
             />
-            <p class="validation">this field is required!</p>
+            <p class="validation"></p>
           </label>
 
           <label for="select"
@@ -53,7 +52,7 @@
               <option value="course">Course</option>
             </select>
           </label>
-          <p class="validation">this field is required!</p>
+          <p class="validation"></p>
           <label for="gender">Gender:</label>
           <section class="radio-box">
             <label for="male">Male</label>
@@ -63,7 +62,7 @@
             <label for="other">Other</label>
             <input type="radio" value="Other" name="gender" />
           </section>
-          <p class="validation">this field is required!</p>
+          <p class="validation"></p>
           <label class="text" for="tel"
             >Phone:
             <input
@@ -71,20 +70,18 @@
               data-required="1"
               id="tel"
               type="tel"
-              value="+91"
-            />
-            <p class="validation">this field is required!</p></label
-          >
+              value="+91" />
+            <p class="validation"></p
+          ></label>
           <label class="text" for="tel1">
             <input
               class="input"
               id="tel1"
               data-required="1"
               type="tel"
-              placeholder="phone no."
-            />
-            <p class="validation">this field is required!</p></label
-          >
+              placeholder="phone no." />
+            <p class="validation"></p
+          ></label>
         </section>
         <section class="right">
           <label class="text" for="address"
@@ -98,7 +95,7 @@
               placeholder="current Address"
               data-required="1"
             ></textarea>
-            <p class="validation">this field is required!</p>
+            <p class="validation"></p>
           </label>
 
           <label class="text" for="email"
@@ -123,10 +120,9 @@
               name="password"
               id="password"
               autocomplete="new-password"
-              placeholder="password"
-            />
-            <p class="validation">this field is required!</p></label
-          >
+              placeholder="password" />
+            <p id="passPatternValid" class="validation"></p
+          ></label>
           <label class="text" for="retype"
             >Re-type Password
             <input
@@ -134,12 +130,9 @@
               class="input"
               data-required="1"
               type="password"
-              placeholder="Retype Password"
-            />
-            <p id="passMatch" class="validation">
-              this field is required!
-            </p></label
-          >
+              placeholder="Retype Password" />
+            <p id="passMatch" class="validation"></p
+          ></label>
         </section>
         <input class="button" type="submit" value="Register" />
       </form>
